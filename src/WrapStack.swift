@@ -88,11 +88,11 @@ struct WrapStack<Content: View>: View {
   var body: some View {
     Group {
       if directionHorizontal {
-        VStack {
+        VStack(spacing: spacing) {
           lanes
         }
       } else {
-        HStack {
+        HStack(spacing: spacing) {
           lanes
         }
       }
